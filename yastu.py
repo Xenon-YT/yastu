@@ -16,7 +16,7 @@ def new_message_handler(update):
 
     if message_text == 'Test!':
         chat_id = update['message']['chat_id']
-        print(f'Someone called me in {chat_id}!')
+        printf('Someone called me in {chat_id}!')
         tg.send_message(
             chat_id=chat_id,
             text='This is just a test!',
